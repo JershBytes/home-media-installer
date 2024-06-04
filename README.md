@@ -22,7 +22,19 @@ As Usual, it spit out 10 answers but one stuck to me. FlexMediaInstaller. It stu
 
 ## :gear: Instructions
 
+- Clone the Repo!
+```
+https://github.com/ColoredBytes/FlexMediaInstaller.git
+```
+
+- Make menu executable
+```
+chmod +x FlexMediaInstaller/menu.sh
+```
+
 ## :memo: Notes
+
+> This runs on most debian and RHEL Systems and has been tested for compatibility.
 
 ## :balance_scale: **LICENSE**
 
