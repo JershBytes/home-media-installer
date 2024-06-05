@@ -4,7 +4,7 @@
 # Purpose: Emby Install Script
 
 # Get the IP address of the host machine
-host_ip=$(hostname -I | cut -d' ' -f1)
+HOST_IP=$(hostname -I | cut -d' ' -f1)
 
 # Create TMP directory
 TMP=$(mktemp -d)
@@ -99,4 +99,4 @@ esac
 # Remove TMP directory
 rm -R $TMP
 
-echo "Emby installed successfully and should now be running at http://${host_ip}:8096"
+echo "Emby installed successfully and should now be running at http://${HOST_IP}:8096"

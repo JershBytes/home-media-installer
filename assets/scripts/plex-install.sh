@@ -4,10 +4,10 @@
 # Purpose: Plex Install Script
 
 # Variables 
+HOST_IP=$(hostname -I | cut -d' ' -f1)
 deubuntu_repo="/etc/apt/sources.list.d/plexmediaserver.list"
 rhel_repo="assets/repos/plex.repo"
 rhel_repo_file="/etc/yum.repos.d/plex.repo"
-
 
 # Functions for type of OS.
 install_plex_on_debubuntu() {
@@ -64,7 +64,7 @@ esac
 
 
 if [ $? -eq 0 ]; then
-    echo "Plex Media Server has been installed successfully."
+    echo "Plex Media Server has been installed successfully and should be running at http://${HOST_IP}:32400/web"
 else
     echo "Installation of Plex Media Server failed. Please check the error messages above."
 fi

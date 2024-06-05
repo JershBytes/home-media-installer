@@ -4,7 +4,7 @@
 # Purpose: Jellyfin install script
 
 # Get the IP address of the host machine
-host_ip=$(hostname -I | cut -d' ' -f1)
+HOST_IP=$(hostname -I | cut -d' ' -f1)
 
 
 # Functions
@@ -76,4 +76,4 @@ fi
 exit $?
 
 # Display the message with the IP address and port
-echo "Jellyfin has been installed and is now running at http://${host_ip}:8096"
+echo "Jellyfin has been installed and is now running at http://${HOST_IP}:8096"
