@@ -12,6 +12,7 @@ install_plex_on_debubuntu() {
     # Add Plex repository and key
     echo "Adding Plex repository for Debian-based systems..."
     echo deb https://downloads.plex.tv/repo/deb public main | sudo tee $deubuntu_repo > /dev/null
+    curl https://downloads.plex.tv/plex-keys/PlexSign.key | sudo apt-key add -
 
     # Update package index
     sudo apt update
@@ -58,34 +59,22 @@ fi
 
 # Install Plex based on the distribution
 case "$OS" in
-    "Ubuntu")
-       install_plex_on_debubuntu || echo "Error installing Plex Media Server on $OS"
-        ;;
-    "Debian GNU/Linux")
+    "Ubuntu" | "Debian GNU/Linux")
         install_plex_on_debubuntu || echo "Error installing Plex Media Server on $OS"
         ;;
-    "Red Hat Enterprise Linux")
+    "Red Hat Enterprise Linux" | "Fedora" | "Rocky Linux" | "AlmaLinux")
         install_plex_on_rhel || echo "Error installing Plex Media Server on $OS"
         ;;
-    "Fedora")
-        install_plex_on_rhel || echo "Error installing Plex Media Server on $OS"
-        ;;
-    "Rocky Linux")
-        install_plex_on_rhel || echo "Error installing Plex Media Server on $OS"
-        ;;
-    "AlmaLinux")
-        install_plex_on_rhel || echo "Error installing Plex Media Server on $OS"
-        ;;
-
     *)
         echo "Unsupported distribution: $OS"
         exit 1
         ;;
 esac
 
+
 if [ $? -eq 0 ]; then
     echo "Plex Media Server has been installed successfully."
 else
     echo "Installation of Plex Media Server failed. Please check the error messages above."
 fi
-    
+
