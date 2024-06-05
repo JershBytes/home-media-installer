@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Author: Joshua Ross
-# Github: https://github.com/ross-jm
+# Github: https://github.com/ColoredBytes
 # Purpose: Jellyfin install script
 
 # Get the IP address of the host machine

@@ -1,5 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Author: Joshua Ross
+# Github: https://github.com/ColoredBytes
 # Purpose: Plex Install Script
 
 # Variables 
