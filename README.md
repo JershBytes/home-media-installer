@@ -22,7 +22,7 @@ As Usual, it spit out 10 answers but one stuck to me. FlexMediaInstaller. It stu
 
 ## :gear: Instructions
 
-- Clone the Repo!
+- Clone the Repo.
 ```
 https://github.com/ColoredBytes/FlexMediaInstaller.git
 ```
@@ -30,6 +30,10 @@ https://github.com/ColoredBytes/FlexMediaInstaller.git
 - Make menu executable
 ```
 chmod +x FlexMediaInstaller/menu.sh
+```
+- Run The Script!
+```
+cd FlexMediaInstaller;./menu.sh
 ```
 
 ## :memo: Notes
