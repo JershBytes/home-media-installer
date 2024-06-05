@@ -27,7 +27,7 @@ install_plex_on_debubuntu() {
 install_plex_on_rhel() {
     
 # Write the repository configuration to a file in /etc/yum.repos.d
-    wget -O "$rhel_repo_file" "$rhel_repo"
+    sudo curl -fsSL -o "$rhel_repo_file" "$rhel_repo"
     #Updating System
     echo "Updating system..."
     sudo dnf makecache
