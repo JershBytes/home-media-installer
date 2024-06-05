@@ -5,7 +5,8 @@
 
 # Variables 
 deubuntu_repo="/etc/apt/sources.list.d/plexmediaserver.list"
-rhel_repo="/etc/yum.repos.d/plex.repo"
+rhel_repo="https://github.com/ColoredBytes/FlexMediaInstaller/blob/97fd83ec7a15250eeb6acbfc1e42d456c71da1a1/assets/repos/plex.repo"
+rhel_repo_file="/etc/yum.repos.d/plex.repo"
 
 
 # Functions for type of OS.
@@ -25,19 +26,8 @@ install_plex_on_debubuntu() {
 
 install_plex_on_rhel() {
     
-# Define the repository configuration
-REPO_CONFIG=$(cat <<EOF
-[PlexRepo]
-name=PlexRepo
-baseurl=https://downloads.plex.tv/repo/rpm/$basearch/
-enabled=1
-gpgkey=https://downloads.plex.tv/plex-keys/PlexSign.key
-gpgcheck=1
-EOF
-)
-
 # Write the repository configuration to a file in /etc/yum.repos.d
-echo "$REPO_CONFIG" | sudo tee $rhel_repo > /dev/null
+    wget -O "$rhel_repo_file" "$rhel_repo"
     #Updating System
     echo "Updating system..."
     sudo dnf makecache
