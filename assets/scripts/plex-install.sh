@@ -29,7 +29,7 @@ install_plex_on_rhel() {
 REPO_CONFIG=$(cat <<EOF
 [PlexRepo]
 name=PlexRepo
-baseurl=https://downloads.plex.tv/repo/rpm/\$basearch/
+baseurl=https://downloads.plex.tv/repo/rpm/$basearch/
 enabled=1
 gpgkey=https://downloads.plex.tv/plex-keys/PlexSign.key
 gpgcheck=1
