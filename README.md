@@ -16,7 +16,7 @@
 
 ## :x: Problem
 
-I have on my **GitHub** 3 separate repos for **Plex** ,**Emby**, and **Jellyfin**. I got to thinking though why not just converge them all into one? So when people want to install one of them they don't need to install clone 3 different repos. Unless That's what you're into.
+I had on my **GitHub** 3 separate repos for **Plex** ,**Emby**, and **Jellyfin**. I got to thinking though why not just converge them all into one? So when people want to install one of them they don't need to install clone 3 different repos. Unless That's what you're into.
 
 ## :heavy_check_mark: Solution
 
