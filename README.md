@@ -30,15 +30,12 @@ As Usual, it spit out 10 answers but one stuck to me. FlexMediaInstaller. It stu
 ```
 https://github.com/ColoredBytes/FlexMediaInstaller.git
 ```
+- Change into the directory and run the script.
 
-- Make menu executable
+```bash
+cd FlexMediaInstaller; ./menu.sh
 ```
-chmod +x FlexMediaInstaller/menu.sh
-```
-- Run The Script!
-```
-cd FlexMediaInstaller;./menu.sh
-```
+
 
 ## :memo: Notes
 > [!NOTE]
