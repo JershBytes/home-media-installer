@@ -28,12 +28,13 @@ As Usual, it spit out 10 answers but one stuck to me. FlexMediaInstaller. It stu
 
 - Clone the Repo.
 ```
-https://github.com/ColoredBytes/FlexMediaInstaller.git
+git clone https://github.com/ColoredBytes/flex-media-installer.git
 ```
 - Change into the directory and run the script.
 
 ```bash
-cd FlexMediaInstaller; ./menu.sh
+cd flex-media-installer
+./menu.sh
 ```
 
 
