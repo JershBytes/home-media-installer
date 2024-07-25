@@ -28,7 +28,7 @@ As Usual, it spit out 10 answers but one stuck to me. FlexMediaInstaller. It stu
 
 - Clone the Repo.
 ```
-git clone https://github.com/ColoredBytes/flex-media-installer.git
+git clone https://github.com/JershOps/flex-media-installer.git
 ```
 - Change into the directory and run the script.
 
