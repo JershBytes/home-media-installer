@@ -1,16 +1,24 @@
 <p align="center">
-  <img src="./assets/images/github-header-image.png" alt="Header">
-  <a href="/LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
-  </a>
+  <img src="assets/images/IMG_0725.png" alt="Header" height="30%" width="30%">
+
+  <h3 align="center"> Home Media Installer </h3>
 </p>
+
+<div align="center">
+
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![GitHub Issues](https://img.shields.io/github/issues/coloredbytes/jershs-scripts.svg)](https://github.com/coloredbytes/stream-dock/issues)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE) <br>
+
+</div>
 
 # :link: Table of Contents
 
-- [:x: Problem](#x-problem)
-- [:heavy\_check\_mark: Solution](#heavy_check_mark-solution)
-- [:gear: Instructions](#gear-instructions)
-- [:memo: Notes](#memo-notes)
+- [:link: Table of Contents](#link-table-of-contents)
+  - [:x: Problem](#x-problem)
+  - [:heavy\_check\_mark: Solution](#heavy_check_mark-solution)
+  - [:gear: Instructions](#gear-instructions)
+  - [:memo: Notes](#memo-notes)
 
 
 ## :x: Problem
