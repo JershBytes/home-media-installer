@@ -31,7 +31,7 @@ I had on my **GitHub** 3 separate repos for **Plex** ,**Emby**, and **Jellyfin**
 The answer came to me when I asked **ChatGPT** a simple question. 
 - **What would be a good name for a Repo with a script that can install plex ,emby or jellyfin?**
 
-As Usual, it spit out 10 answers but one stuck to me. FlexMediaInstaller. It stuck to me because this gives us the flexibility to install whatever media server we want. So I grabbed the 3 scripts I had made a whiptail menu for the front page and this **FlexMediaInstaller** was born.
+As Usual, it spit out 10 answers but one stuck to me.  Home Media Installer . It stuck to me because this gives us the flexibility to install whatever media server we want. So I grabbed the 3 scripts I had made a whiptail menu for the front page and this **Home Media Installer** was born.
 
 ## :gear: Instructions
 
