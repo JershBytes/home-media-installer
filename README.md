@@ -1,6 +1,5 @@
 <p align="center">
   <img src="assets/images/IMG_0725.png" alt="Header" height="30%" width="30%">
-
   <h3 align="center"> Home Media Installer </h3>
 </p>
 
@@ -9,6 +8,8 @@
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/coloredbytes/jershs-scripts.svg)](https://github.com/coloredbytes/stream-dock/issues)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE) <br>
+<i> Your AIO Home Media Server Installer </i>
+
 
 </div>
 
