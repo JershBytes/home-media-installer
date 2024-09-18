@@ -34,17 +34,12 @@ The answer came to me when I asked **ChatGPT** a simple question.
 As Usual, it spit out 10 answers but one stuck to me.  Home Media Installer . It stuck to me because this gives us the flexibility to install whatever media server we want. So I grabbed the 3 scripts I had made a whiptail menu for the front page and this **Home Media Installer** was born.
 
 ## :gear: Instructions
+- Run the script.
 
-- Clone the Repo.
+```shell
+curl -fsSL https://raw.githubusercontent.com/coloredbytes/home-media-installer/refs/heads/main/menu.sh | bash
 ```
-git clone https://github.com/JershOps/flex-media-installer.git
-```
-- Change into the directory and run the script.
 
-```bash
-cd flex-media-installer
-./menu.sh
-```
 
 
 ## :memo: Notes

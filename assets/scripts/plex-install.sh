@@ -5,15 +5,15 @@
 
 # Variables 
 HOST_IP=$(hostname -I | cut -d' ' -f1)
-deubuntu_repo="/etc/apt/sources.list.d/plexmediaserver.list"
-rhel_repo="assets/repos/plex.repo"
-rhel_repo_file="/etc/yum.repos.d/plex.repo"
+REPO_URL="https://raw.githubusercontent.com/coloredbytes/home-media-installer/refs/heads/main/assets/repos/plex.repo"
+DEUBUNTU_REPO="/etc/apt/sources.list.d/plexmediaserver.list"
+RHEL_REPO_LOCATION="/etc/yum.repos.d/plex.repo"
 
 # Functions for type of OS.
 install_plex_on_debubuntu() {
     # Add Plex repository and key
     echo "Adding Plex repository for Debian-based systems..."
-    echo deb https://downloads.plex.tv/repo/deb public main | sudo tee $deubuntu_repo > /dev/null
+    echo deb https://downloads.plex.tv/repo/deb public main | sudo tee $DEUBUNTU_REPO > /dev/null
     curl https://downloads.plex.tv/plex-keys/PlexSign.key | sudo apt-key add -
 
     # Update package index
@@ -27,7 +27,7 @@ install_plex_on_debubuntu() {
 install_plex_on_rhel() {
     
 # Write the repository configuration to a file in /etc/yum.repos.d
-    sudo cp "$rhel_repo" "$rhel_repo_file"
+    sudo curl -o "$RHEL_REPO_LOCATION" "$REPO_URL"
     #Updating System
     echo "Updating system..."
     sudo dnf makecache
