@@ -1,15 +1,18 @@
 #!/usr/bin/env bash
 # Author: Joshua Ross
 # Github: https://github.com/ColoredBytes
-# Purpose: All in One Media Server install Script
+# Purpose: All in One Media Server install Script using gum
 
+# Check if gum is installed
+if ! command -v gum &> /dev/null
+then
+    echo "gum is not installed. Please install gum to proceed."
+    echo "You can install gum by following the instructions at https://github.com/charmbracelet/gum"
+    exit 1
+fi
 
-
-# Use whiptail to create a menu
-CHOICE=$(whiptail --title "FlexMediaInstaller" --menu "Choose a media server to install" 15 60 4 \
-"Plex" "Install Plex Media Server" \
-"Emby" "Install Emby Server" \
-"Jellyfin" "Install Jellyfin Media Server" 3>&1 1>&2 2>&3)
+# Use gum to create a menu
+CHOICE=$(gum choose "Plex" "Emby" "Jellyfin")
 
 # Act based on the user's choice
 case $CHOICE in
