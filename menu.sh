@@ -29,6 +29,13 @@ if command -v gum &> /dev/null
 then
     # Use gum if available
     CHOICE=$(gum choose "Plex" "Emby" "Jellyfin")
+
+    # Apply styling using gum
+    gum style \
+        --border normal \
+        --margin "1" \
+        --padding "1" \
+        " Home Media Installer"
 else
     # Fallback if gum is not installed
     echo "gum is not installed. Using fallback menu."
@@ -53,9 +60,3 @@ case $CHOICE in
         echo "Invalid choice!"
         ;;
 esac
-
-gum style \
-        -- border normal \
-        -- margin "1" \
-        -- padding "1" \
-        " Home Media Installer"
