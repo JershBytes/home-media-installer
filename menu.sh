@@ -28,6 +28,12 @@ fallback_menu() {
 if command -v gum &> /dev/null
 then
     # Use gum if available
+    gum style \
+        -- border normal \
+        -- margin "1" \
+        -- padding "1" \
+        " Home Media Installer"
+        
     CHOICE=$(gum choose "Plex" "Emby" "Jellyfin")
 else
     # Fallback if gum is not installed
