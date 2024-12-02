@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # Author: Joshua Ross
 # Github: https://github.com/ColoredBytes
 # Purpose: Emby Install Script

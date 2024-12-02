@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # Author: Joshua Ross
 # Github: https://github.com/ColoredBytes
 # Purpose: Jellyfin install script
@@ -23,12 +23,12 @@ install_jellyfin_on_rhel() {
 install_rpmfusion() {
     if [ -f /etc/fedora-release ]; then
         # If it's Fedora
-        sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-        sudo dnf install -y https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+        sudo dnf install -y "https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm"
+        sudo dnf install -y "https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
     elif [ -f /etc/redhat-release ]; then
         # If it's RHEL or CentOS
-        sudo dnf install -y https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm -E %rhel).noarch.rpm
-        sudo dnf install -y https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-$(rpm -E %rhel).noarch.rpm
+        sudo dnf install -y "https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm -E %rhel).noarch.rpm"
+        sudo dnf install -y "https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-$(rpm -E %rhel).noarch.rpm"
     else
         echo "Unsupported distribution"
         return 1
@@ -71,9 +71,6 @@ if [ $? -eq 0 ]; then
 else
     echo "Installation of Jellyfin Media Server failed. Please check the error messages above."
 fi
-
-# Exit with appropriate code
-exit $?
 
 # Display the message with the IP address and port
 echo "Jellyfin has been installed and is now running at http://${HOST_IP}:8096"
