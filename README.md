@@ -19,7 +19,8 @@
   - [:x: Problem](#x-problem)
   - [:heavy\_check\_mark: Solution](#heavy_check_mark-solution)
   - [:gear: Instructions](#gear-instructions)
-  - [:memo: Notes](#memo-notes)
+    - [Clone the repo](#clone-the-repo)
+    - [Run the script.](#run-the-script)
 
 
 ## :x: Problem
@@ -34,14 +35,15 @@ The answer came to me when I asked **ChatGPT** a simple question.
 As Usual, it spit out 10 answers but one stuck to me.  Home Media Installer . It stuck to me because this gives us the flexibility to install whatever media server we want. So I grabbed the 3 scripts I had made a whiptail menu for the front page and this **Home Media Installer** was born.
 
 ## :gear: Instructions
-- Run the script.
+
+### Clone the repo
+```
+https://github.com/JershBytes/home-media-installer.git
+```
+### Run the script.
 
 ```shell
-curl -fsSL https://raw.githubusercontent.com/coloredbytes/home-media-installer/refs/heads/main/menu.sh | bash
+./menu.sh
 ```
 
-
-
-## :memo: Notes
-> [!NOTE]
-> This runs on most Debian and RHEL Systems and has been tested for compatibility.
+- Pick the sever you want and have fun!
